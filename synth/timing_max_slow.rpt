@@ -1,0 +1,79 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_without_mem
+Version: I-2013.12-SP1
+Date   : Thu Nov 19 12:14:58 2015
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: control/current_state_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: data/iterationCount_reg[12]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  control/current_state_reg[1]/CK (SDFF_X2)             0.0000     0.0000 r
+  control/current_state_reg[1]/QN (SDFF_X2)             0.6173     0.6173 f
+  control/U18/ZN (NOR3_X2)                              0.4233     1.0407 r
+  control/U29/ZN (NAND2_X2)                             0.1529     1.1935 f
+  control/U82/ZN (NAND3_X2)                             0.1862     1.3798 r
+  control/U83/ZN (INV_X4)                               0.0515     1.4313 f
+  control/U84/ZN (NAND4_X2)                             0.2442     1.6755 r
+  control/fsm_state[1] (fsm)                            0.0000     1.6755 r
+  data/state[1] (datapath)                              0.0000     1.6755 r
+  data/U246/ZN (AND3_X1)                                0.3704     2.0459 r
+  data/U357/ZN (AND2_X4)                                0.3687     2.4147 r
+  data/U627/ZN (INV_X4)                                 0.2314     2.6461 f
+  data/U1278/ZN (OAI22_X2)                              0.2953     2.9414 r
+  data/U1279/ZN (INV_X4)                                0.0674     3.0088 f
+  data/U1289/ZN (OAI22_X2)                              0.3293     3.3380 r
+  data/U1290/ZN (INV_X4)                                0.0596     3.3976 f
+  data/U1296/ZN (OAI22_X2)                              0.3281     3.7258 r
+  data/U1297/ZN (INV_X4)                                0.0596     3.7853 f
+  data/U1304/ZN (OAI22_X2)                              0.3281     4.1135 r
+  data/U1305/ZN (INV_X4)                                0.0596     4.1731 f
+  data/U1313/ZN (OAI22_X2)                              0.3281     4.5012 r
+  data/U1314/ZN (INV_X4)                                0.0596     4.5608 f
+  data/U1322/ZN (OAI22_X2)                              0.3281     4.8889 r
+  data/U1323/ZN (INV_X4)                                0.0596     4.9485 f
+  data/U1331/ZN (OAI22_X2)                              0.3622     5.3107 r
+  data/U438/ZN (AOI22_X2)                               0.1982     5.5089 f
+  data/U1344/ZN (OAI22_X2)                              0.3857     5.8946 r
+  data/U1345/ZN (INV_X4)                                0.0596     5.9542 f
+  data/U1354/ZN (OAI22_X2)                              0.3281     6.2824 r
+  data/U1355/ZN (INV_X4)                                0.0596     6.3419 f
+  data/U1364/ZN (OAI22_X2)                              0.3281     6.6701 r
+  data/U1365/ZN (INV_X4)                                0.0596     6.7297 f
+  data/U1376/ZN (OAI22_X2)                              0.3264     7.0560 r
+  data/U645/ZN (XNOR2_X2)                               0.3449     7.4010 r
+  data/U1378/ZN (NAND2_X2)                              0.0944     7.4954 f
+  data/U1379/ZN (OAI221_X2)                             0.2136     7.7090 r
+  data/iterationCount_reg[12]/D (DFF_X2)                0.0000     7.7090 r
+  data arrival time                                                7.7090
+
+  clock clock (rise edge)                               8.0500     8.0500
+  clock network delay (ideal)                           0.0000     8.0500
+  clock uncertainty                                    -0.0500     8.0000
+  data/iterationCount_reg[12]/CK (DFF_X2)               0.0000     8.0000 r
+  library setup time                                   -0.2895     7.7105
+  data required time                                               7.7105
+  --------------------------------------------------------------------------
+  data required time                                               7.7105
+  data arrival time                                               -7.7090
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0015
+
+
+1

@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : top_without_mem
+Version: K-2015.06-SP1
+Date   : Wed Nov 11 14:21:28 2015
+****************************************
+
+Operating Conditions: fast   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_fast_nldm
+Wire Load Model Mode: top
+
+  Startpoint: data/workRead1_Addr_reg[0]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: data/workRead1_Addr_reg[0]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: min
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data/workRead1_Addr_reg[0]/CK (DFF_X2)                0.0000     0.0000 r
+  data/workRead1_Addr_reg[0]/QN (DFF_X2)                0.0501     0.0501 f
+  data/U353/ZN (OAI22_X2)                               0.0224     0.0724 r
+  data/workRead1_Addr_reg[0]/D (DFF_X2)                 0.0000     0.0724 r
+  data arrival time                                                0.0724
+
+  clock clock (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  clock uncertainty                                     0.0500     0.0500
+  data/workRead1_Addr_reg[0]/CK (DFF_X2)                0.0000     0.0500 r
+  library hold time                                    -0.0165     0.0335
+  data required time                                               0.0335
+  --------------------------------------------------------------------------
+  data required time                                               0.0335
+  data arrival time                                               -0.0724
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0389
+
+
+1

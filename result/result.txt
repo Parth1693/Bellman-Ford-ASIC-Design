@@ -1,0 +1,14 @@
+Project Results:
+
+Input files: Graph_secret1.mem and input_secret1.mem
+
+Total Simulation Time : 67899535 ns
+Clock Period in test_bench: 10 ns
+Number of cycles for secret1 input file: 6789953 cycles
+
+Clock Period obtained after Synthesis: 8.05 ns 
+Area obtained from Synopsys: 3694.47 micro-mm^(2)
+
+Performance = Area x Number of Cycles x Clock Period
+Performance = 3694.47 x 6789953 x 8.05
+	    = 2.01 x 10^(11) micro-mm^(2)-ns

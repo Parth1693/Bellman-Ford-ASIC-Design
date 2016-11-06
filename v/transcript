@@ -1,0 +1,22 @@
+# //  ModelSim SE 10.3b May 29 2014 Linux 2.6.32-573.3.1.el6.x86_64
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //
+# vsim -vopt test_bench 
+# Start time: 12:09:29 on Nov 19,2015
+# ** Note: (vsim-3812) Design is being optimized...
+# Loading work.test_bench(fast)
+run -all
+# Execution Finish Time =             67899535 ns
+# 
+# ** Note: $finish    : test_bench.v(42)
+#    Time: 67899545 ns  Iteration: 0  Instance: /test_bench
+# 1
+# Break at test_bench.v line 42
+# End time: 12:13:33 on Nov 19,2015, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 0

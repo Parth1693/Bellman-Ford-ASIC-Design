@@ -1,0 +1,87 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : top_without_mem
+Version: K-2015.06-SP1
+Date   : Wed Nov 11 14:21:32 2015
+****************************************
+
+Operating Conditions: slow   Library: NangateOpenCellLibrary_PDKv1_2_v2008_10_slow_nldm
+Wire Load Model Mode: top
+
+  Startpoint: data/offsetMux_Sel2_reg[1]
+              (rising edge-triggered flip-flop clocked by clock)
+  Endpoint: data/workWrite_Pred_reg[5]
+            (rising edge-triggered flip-flop clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clock (rise edge)                               0.0000     0.0000
+  clock network delay (ideal)                           0.0000     0.0000
+  data/offsetMux_Sel2_reg[1]/CK (DFF_X2)                0.0000     0.0000 r
+  data/offsetMux_Sel2_reg[1]/QN (DFF_X2)                0.3425     0.3425 f
+  data/U671/ZN (NOR2_X2)                                0.2475     0.5900 r
+  data/U333/ZN (NAND2_X4)                               0.1303     0.7202 f
+  data/U373/ZN (OAI22_X2)                               0.3151     1.0354 r
+  data/U651/ZN (AOI221_X2)                              0.1646     1.2000 f
+  data/U648/ZN (NAND2_X2)                               0.1345     1.3345 r
+  data/U641/ZN (NOR2_X2)                                0.0673     1.4018 f
+  data/U639/ZN (OAI22_X2)                               0.3494     1.7512 r
+  data/U622/ZN (INV_X2)                                 0.0628     1.8140 f
+  data/U618/ZN (OAI22_X2)                               0.3308     2.1447 r
+  data/U619/ZN (INV_X4)                                 0.0572     2.2020 f
+  data/U818/ZN (NOR2_X2)                                0.1311     2.3331 r
+  data/U795/ZN (NOR2_X2)                                0.0775     2.4106 f
+  data/U710/ZN (OAI22_X2)                               0.3577     2.7683 r
+  data/U144/ZN (INV_X4)                                 0.0338     2.8021 f
+  data/U678/ZN (OAI22_X1)                               0.4504     3.2525 r
+  data/U889/ZN (XNOR2_X2)                               0.3604     3.6129 r
+  data/U702/ZN (XNOR2_X2)                               0.1223     3.7351 f
+  data/U801/ZN (NAND2_X2)                               0.1409     3.8760 r
+  data/U803/ZN (NAND2_X2)                               0.0593     3.9353 f
+  data/U804/ZN (NAND2_X2)                               0.0830     4.0183 r
+  data/U709/ZN (AOI22_X2)                               0.1061     4.1245 f
+  data/U947/ZN (INV_X4)                                 0.0724     4.1968 r
+  data/U1269/ZN (NOR2_X2)                               0.0376     4.2344 f
+  data/U1270/ZN (OAI22_X2)                              0.3074     4.5417 r
+  data/U948/ZN (AOI22_X2)                               0.1691     4.7109 f
+  data/U392/ZN (AOI21_X2)                               0.3347     5.0456 r
+  data/U617/ZN (OAI21_X2)                               0.1167     5.1623 f
+  data/U454/ZN (INV_X4)                                 0.0819     5.2441 r
+  data/U613/ZN (NAND2_X2)                               0.0458     5.2899 f
+  data/U611/ZN (NAND2_X2)                               0.1063     5.3962 r
+  data/U334/ZN (INV_X2)                                 0.0417     5.4379 f
+  data/U323/ZN (OAI22_X2)                               0.3225     5.7605 r
+  data/U324/ZN (INV_X2)                                 0.0627     5.8232 f
+  data/U321/ZN (OAI22_X2)                               0.3293     6.1525 r
+  data/U320/ZN (INV_X4)                                 0.0420     6.1944 f
+  data/U310/ZN (OAI22_X2)                               0.3215     6.5159 r
+  data/U311/ZN (NOR2_X2)                                0.0857     6.6016 f
+  data/U308/ZN (OAI22_X2)                               0.3065     6.9082 r
+  data/U307/ZN (NAND2_X2)                               0.0865     6.9946 f
+  data/U303/ZN (NAND2_X2)                               0.1419     7.1365 r
+  data/U301/ZN (INV_X4)                                 0.0682     7.2047 f
+  data/U300/ZN (NAND2_X4)                               0.2101     7.4148 r
+  data/U297/ZN (OAI222_X2)                              0.2334     7.6482 f
+  data/workWrite_Pred_reg[5]/D (DFF_X2)                 0.0000     7.6482 f
+  data arrival time                                                7.6482
+
+  clock clock (rise edge)                               8.0500     8.0500
+  clock network delay (ideal)                           0.0000     8.0500
+  clock uncertainty                                    -0.0500     8.0000
+  data/workWrite_Pred_reg[5]/CK (DFF_X2)                0.0000     8.0000 r
+  library setup time                                   -0.3498     7.6502
+  data required time                                               7.6502
+  --------------------------------------------------------------------------
+  data required time                                               7.6502
+  data arrival time                                               -7.6482
+  --------------------------------------------------------------------------
+  slack (MET)                                                      0.0021
+
+
+1
